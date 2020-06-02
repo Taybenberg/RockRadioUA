@@ -1,0 +1,23 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        x:Class="RockRadioUA.MainWindow" mc:Ignorable="d"
+        Title="РокРадіо UA | rockradioua.online" Height="480" Width="370" HasSystemDecorations="false">
+  <Grid Background="#FF1E1E1E">
+    <Rectangle x:Name="TitleBar" HorizontalAlignment="Center" Height="30" VerticalAlignment="Top" Width="370" Fill="#FF2D2D30"  PointerPressed="TitleBar_MouseLeftButtonDown"/>
+    <TextBlock x:Name="TitleText" Text="РокРадіо UA | rockradioua.online" HorizontalAlignment="Left" FontSize="12" Margin="45,6,0,0" FontWeight="Bold" VerticalAlignment="Top" Height="24" Width="194" Foreground="White" PointerPressed="TitleText_MouseLeftButtonDown"/>
+    <TextBlock x:Name="TrackLabel" HorizontalAlignment="Left" Margin="93,405,0,0" VerticalAlignment="Top" FontSize="18" Foreground="White" FontWeight="Bold" Width="269" Height="35"/>  
+    <TextBlock x:Name="ArtistLabel" HorizontalAlignment="Left" Margin="93,440,0,0" VerticalAlignment="Top" FontSize="14" Foreground="White" FontWeight="Bold" Width="269" Height="35"/>
+    <Image x:Name="Cover" HorizontalAlignment="Center" Height="350" Margin="0,40,0,0" VerticalAlignment="Top" Width="350" Stretch="Uniform" StretchDirection="Both"/>
+    <Image x:Name="TitleIcon" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="27" Margin="10,2,0,0" Stretch="Uniform"  PointerPressed="TitleIcon_MouseLeftButtonDown"/>
+    <Image x:Name="ExitBtn" HorizontalAlignment="Left" Height="30" Margin="324,0,0,0" VerticalAlignment="Top" Width="46" Stretch="Fill" PointerEnter="ExitBtn_MouseEnter" PointerLeave="ExitBtn_MouseLeave" PointerReleased="ExitBtn_MouseLeftButtonUp"/>
+    <Image x:Name="MinimizeBtn" HorizontalAlignment="Left" Height="30" Margin="278,0,0,0" VerticalAlignment="Top" Width="46" Stretch="Fill" PointerEnter="MinimizeBtn_MouseEnter" PointerLeave="MinimizeBtn_MouseLeave" PointerReleased="MinimizeBtn_MouseLeftButtonUp"/>
+    <Image x:Name="PlaybackControl" HorizontalAlignment="Left" Height="70" Margin="10,400,0,0" VerticalAlignment="Top" Width="70" PointerEnter="PlaybackControl_MouseEnter" PointerLeave="PlaybackControl_MouseLeave" PointerReleased="PlaybackControl_MouseLeftButtonUp" Stretch="Fill" OpacityMask="Black">
+      <Image.Clip>
+        <EllipseGeometry Rect="0,0,70,70" />
+      </Image.Clip>
+    </Image>
+  </Grid>
+</Window>
+
